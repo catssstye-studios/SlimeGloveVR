@@ -1,6 +1,10 @@
 ![LucidGloves](https://cdn.discordapp.com/attachments/785135646082990120/873666310855360582/LucidGlovesBlackwbkgnd.png)
-Warning these are Lucas and i am not making them yet or write code for it if you want i allow help
-# LucidGloves - Firmware and 3D Printer Files
+Warning these are Lucas and i am not making them yet or write code for it if you want i allow help and my wants are very different 
+
+SlimeGloves: A fork of LucidGloves with Arduino/ESP32-based DIY VR haptic gloves, designed to be lightweight without controller attachments. Compatible with SteamVR via OpenGloves. Integrates features from SlimeVR trackers and LucasVRTech, combining finger tracking data into SlimeVR's full-body tracking. The design adds X, Y, A, B buttons, joysticks, and optionally an Oculus button for more control. While it is not currently being worked on due to lack of materials, the goal is to create an immersive, controller-free VR experience with customizable functionality."
+
+
+ "#LucidGloves - Firmware and 3D Printer Files
 This repo contains the arduino firmware as well as the STL files for Prototypes 3 through 4 of the LucidVR glove. This is a finger tracking glove that allows you to use your hands in VR. Follow along with Lucas_VRTech's developments on his Tiktok page:
 https://www.tiktok.com/@lucas_vrtech
 
@@ -76,4 +80,4 @@ Source code available on GitHub:
 https://github.com/LucidVR/opengloves-driver
 
 # Other Languages
-**[English](https://github.com/LucidVR/lucidgloves/blob/main/README.md) | [简体中文](https://github.com/LucidVR/lucidgloves/blob/main/Readme_Languages/README_CN.md)**
+**[English](https://github.com/LucidVR/lucidgloves/blob/main/README.md) | [简体中文](https://github.com/LucidVR/lucidgloves/blob/main/Readme_Languages/README_CN.md)** "
