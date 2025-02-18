@@ -1,82 +1,88 @@
-![LucidGloves](https://cdn.discordapp.com/attachments/785135646082990120/873666310855360582/LucidGlovesBlackwbkgnd.png)
-Warning these are Lucas and i am not making them yet or write code for it if you want i allow help
-
-SlimeGloves: A fork of LucidGloves with Arduino/ESP32-based DIY VR haptic gloves, designed to be lightweight without controller attachments. Compatible with SteamVR via OpenGloves. Integrates features from SlimeVR trackers and LucasVRTech, combining finger tracking data into SlimeVR's full-body tracking. The design adds X, Y, A, B buttons, joysticks, and optionally an Oculus button for more control. While it is not currently being worked on due to lack of materials, the goal is to create an immersive, controller-free VR experience with customizable functionality And no code yet and no software check yet with steamvr or opengloves
-
-# LucidGloves - Firmware and 3D Printer Files
-This repo contains the arduino firmware as well as the STL files for Prototypes 3 through 4 of the LucidVR glove. This is a finger tracking glove that allows you to use your hands in VR. Follow along with Lucas_VRTech's developments on his Tiktok page:
-https://www.tiktok.com/@lucas_vrtech
-
-# Building your own gloves
-**Start here at the wiki! https://github.com/LucidVR/lucidgloves/wiki**
-
-# Support
-Join the LucidVR discord server for assistance:
-https://discord.gg/lucidvr
-
-
-# Firmware
-Open the firmware files located in the firmware/lucidgloves-firmware folder.
-By default the firmware is configured for an arduino nano using serial.
-To configure the firmware, change the defines in the lucidgloves-firmware.ino file.
-
-**Configuration instructions are here: [Configuration Instructions](https://github.com/LucidVR/lucidgloves/wiki/Firmware-Setup-and-Customization-Tutorial).**\
-**Firmware Troubleshooting Guide is here: [Firmware Troubleshooting Guide](https://github.com/LucidVR/lucidgloves/wiki/Firmware-Troubleshooting-Guide).** 
-
-## Tested boards:
-* Arduino Nano
-* ESP-WROOM-32
-
-## Supported Communication Methods:
-* USB Serial
-* Bluetooth Serial (On ESP32 boards)
-* BLE (Soon, not up yet)
-
-# Hardware
-STL files for 3D printing are located in the hardware folder. 
-*Prototype 4 models are currently experimental.*
-
-The assembly **for each hand** is as follows:
-
-For Prototypes 3 and 3.1 - 
-* Spool (5x)
-* Tensioner (5x)
-* Cover (5x)
-* Holder (5x)
-* GuideRing(Will need to be resized) OR GuideNode(3.1) (2+ per finger, 1+ for thumb)
-* EndCap (1x per finger, will need to be resized to fit) 
-
-For Prototypes 4 and 4.1 - 
-* HapticSpool (5x)
-* Tensioner_GreenPot (5x) OR Tensioner_WLPot (5x)
-* SpoolCover (5x)
-* RigidMount (1x) (Left or right hand)
-* WLPotSlideHolder OR WLPotElasticHolder OR GreenPotSlideHolder (5x)
-* Quest2_MountSlider OR Vive3.0_MountSlider (1x)
-* GuideRing (Proto 3) (Will need to be resized) OR GuideNode (Proto 3.1) (2+ per finger, 1+ for thumb)
-* EndCap (Proto 3) (1x per finger, will need to be resized to fit)
+SlimeGloves: VR Haptic Gloves Fork
 
 
 
-Guide for printing parts: [Printing guide](https://github.com/LucidVR/lucidgloves/wiki/Parts-Printing-Guides)
+Warning: These are ideas based on LucasVRTech’s work, and I’m not working on them yet due to lack of materials. No code has been written, and no software has been tested with SteamVR or OpenGloves.
 
+This project is a fork of LucidGloves, combining SlimeVR trackers with the LucidGloves framework. The goal is to integrate SlimeVR tracker data into the glove's functionality, specifically for finger tracking, without needing additional controllers. I aim to use SlimeVR trackers for the full-body data and rely on that for the glove's finger tracking data. However, this idea is in its conceptual phase and has not been implemented yet.
 
-**Required parts for each hand: [Parts Lists](https://github.com/LucidVR/lucidgloves/wiki/Parts-Lists)**  
-Optional:  
-* Joysticks for locomotion 
-  - Will be making a DIY treadmill eventually as well for those who would prefer that  
-* Buttons (Most can be replaced with gestures) (One is required for autocalibration)
+The SlimeGloves will include Arduino/ESP32-based VR haptic gloves, lightweight without controller attachments, and compatible with SteamVR through OpenGloves. I also plan to integrate buttons like X, Y, A, B, joysticks, and possibly an Oculus button for additional control options. This is designed to work in a standalone manner, allowing phone connection via IP to the headset and sideloading an app version that communicates with the VR headset.
 
-More information will be available on the [LucidVR site](http://lucidvrtech.com/) very soon.  
-*  [Prototype 3/3.1 Building Tutorial](https://youtu.be/Qj4hqRKiy8g)
-*  [Prototype 4/4.1 Building Tutorial](https://youtu.be/2yF-SJcg3zQ)
+This idea is inspired by my personal needs as a VRChat user, and I want to create an immersive, controller-free experience. Although I'm working on the SlimeVR app for standalone functionality, the actual hardware and software have not been tested yet. The integration is still a work in progress.
 
-# SteamVR Compatibility (OpenGloves)
-This project uses the OpenGloves OpenVR driver for compatibility with SteamVR, which is downloadable on Steam:  
-https://store.steampowered.com/app/1574050/OpenGloves/
+If anyone wants to collaborate or help with this project, feel free to comment on my fork. I welcome any assistance in making this a reality.
 
-Source code available on GitHub:  
-https://github.com/LucidVR/opengloves-driver
+LucidGloves - Firmware and 3D Printer Files
 
-# Other Languages
-**[English](https://github.com/LucidVR/lucidgloves/blob/main/README.md) | [简体中文](https://github.com/LucidVR/lucidgloves/blob/main/Readme_Languages/README_CN.md)**
+This repo contains the Arduino firmware and STL files for Prototypes 3 through 4 of the LucidGloves. These gloves allow you to use your hands in VR. Please follow along with LucasVRTech’s developments on his TikTok page:
+LucasVRTech TikTok
+
+Building your own gloves
+
+Start here at the wiki:LucidGloves Wiki
+
+Support
+
+Join the LucidVR Discord server for assistance:LucidVR Discord
+
+Firmware
+
+Open the firmware files located in the firmware/lucidgloves-firmware folder. By default, the firmware is configured for an Arduino Nano using serial. To configure the firmware, change the defines in the lucidgloves-firmware.ino file.
+
+Configuration instructions are here:Configuration InstructionsFirmware Troubleshooting Guide is here:Firmware Troubleshooting Guide
+
+Tested boards:
+
+Arduino Nano
+
+ESP-WROOM-32
+
+Supported Communication Methods:
+
+USB Serial
+
+Bluetooth Serial (on ESP32 boards)
+
+BLE (Soon, not yet available)
+
+Hardware
+
+STL files for 3D printing are located in the hardware folder.
+
+Required parts for each hand:
+
+Spool (5x)
+
+Tensioner (5x)
+
+Cover (5x)
+
+Holder (5x)
+
+GuideRing (Will need resizing) OR GuideNode (3.1) (2+ per finger, 1+ for thumb)
+
+EndCap (1x per finger, will need resizing to fit)
+
+Guide for printing parts:
+
+Printing guide
+
+Required parts:Parts ListOptional:
+
+Joysticks for locomotion (DIY treadmill in the works)
+
+Buttons (Many can be replaced with gestures; one button is required for autocalibration)
+
+More information will be available soon on the LucidVR site.
+
+SteamVR Compatibility (OpenGloves)
+
+This project uses the OpenGloves OpenVR driver for compatibility with SteamVR, which is downloadable from Steam:OpenGloves on Steam
+
+Source code available on GitHub:OpenGloves GitHub
+
+Other LanguagesEnglish | 简体中文
+
+Disclaimer:
+
+This is a personal project, and I'm not working on it actively due to lack of materials and resources. Feel free to reach out if you'd like to contribute to the project!
